@@ -36,18 +36,41 @@ The GitHub repository README is updated with all pertinent information.
 
 
 ## 1. The Idea
-Original idea briefly and sharp pivot
 The original idea for the IoT Venture was to create a smart dog feeder. Significant research was put into this and can be referenceed here. However, it was decided to pivot to a more ambitious project and due to some interesting use cases of RTK-GPS for aerial robots, a decision was made to research applications for ground robots instead. Leveraging similar technology, there is a uniqe advantage to accurately knowing the location of a ground robot for using a tool, end effector, or actuator in the real world.
 
-## 2. Reflecting on the Venture Pitch
-IoT venture pitch recall
+This led to the idea of developing an RTK-GPS system for mobile robots by creating a rover and base station module using a combined RTK-GPS module, a LoRa module, and leveraging the nRF 5340 where the base station corrects the relative position of the rover using RTCM correction data. This would allow the mobile robot to have a painting tool and follow a specified path with GPS coordinates that form trajectories for the robot to navigate and paint sport field lines.
 
+So, all areas were changed, including:
+1. Target Market & Demographics
+2. Security, Hardware, & Software Requirements
+3. Product Function & Components
+4. Power & Cost Budgeting
+
+*more reflection*
+
+## 2. Reflecting on the Venture Pitch
+Going back to the original Venture Pitch, the main concerns with the smart dog feeder that were discussed were unique features for market penetration, reliability of the dispensing mechanism being a mechanical factor limiting progress, and an innovative user interface. Reflecting on this, the project was changed because a newer market that transfers technology would better benefit from IoT features integrated into a novel product.
+
+A second Venture Pitch was done that highlighted the wireless communication with WiFi and LoRa, development with an RTK-GPS module (ZED-F9P), andthe use of off the shelf robot solutions. This combines into a feasible demo with a lean team for engineering and scalability considerations to integrate with existing stadium infrastructure. The primary focus for the product and demo is to target professional sports fields to acquire credibility, funding, and marketability from working with an initial high profile client.
 
 ## 3. Successes
-Successes
+
+1. NTRIP Server:
+
+2. UART Transmission:
+
+3. Procedural Processes:
+
+4. Technology for Clients*:
+
 
 ## 4. Failures
-Failures
+
+1. Project Timeline:
+
+2. Full Memfault Integration:
+
+3. Full RTCM data for RTK Lock:
 
 ## 5. Improving Workflow
 If you had to do it again, how might you change your development approach given the finite time and money resources?
