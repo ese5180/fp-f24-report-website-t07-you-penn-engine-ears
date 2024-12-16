@@ -80,9 +80,15 @@ The technology developed for this project looks to use an engineered device in a
 
 1. Project Timeline:
 
+The pivot from the initial idea required more attention from the group to focus on the change in technology. Many tasks were pushed off relating to Memfault and the LoRa module. Parts did not arrive on the expected timeline due to orders from Detkin falling behind so the time to work with the nRF 7002 DK and the ZED-F9P was less than expected.
+
 2. Full Memfault Integration:
 
+The full Memfault integration was not achieved because of misunderstandings with using the Memfault metrics feature. Core dumps were achieved and an event was triggered but not reported to the Memfault graphs. Setup was done within the methodology of the code for Memfault integration to implement code for tracking metrics.
+
 3. Full RTCM data for RTK Lock:
+
+The RTCM data for RTK lock is transmitted out of the nRF 7002 DK but it is not recognized by the ZED-F9P. This is likely due to a message formatting issue with how the RTCM data is packaged. Attempts were made to try and identify the message structure based off of a Sparkfun guide but were not fully formatted correctly for the demo.
 
 ## 5. Improving Workflow
 If you had to do it again, how might you change your development approach given the finite time and money resources?
