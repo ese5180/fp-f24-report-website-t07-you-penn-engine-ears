@@ -56,18 +56,23 @@ A second Venture Pitch was done that highlighted the wireless communication with
 ## 3. Successes
 
 1. NTRIP Server:
+
 The NTRIP server from RTK2go.com was successfully leverage to gather GPS correction data based on a station in Pottstown, Pennsylvania. The connection is made following the specification of the NTRIP host, port, and mount point. A TCP connection is made to the NTRIP server, then a formatted HTTP GET request is sent to the specified mount point, and finally the nRF 5340 receives RTCM correction data.
 
 2. Filtering RTCM Correction Data:
+
 The RTCM correction data is filtered to ensure that only the necessary RTCM message types required by the ZED-F9P cinluding 1005, 1074, 1084, 1094, 1124, 1230 for high precision positioning. This also improves the bandwidth and prevents overloading of the ZED-F9P by reducing the amount of data sent from the nRF 5340.
 
 3. UART Transmission:
+
 Using Zephyr and the device tree, UART 1 is specified for communication allowing for this code to be better transferred between development boards. Specifying the device tree required a more complex configuartion through nRF Connect but would hopefully result in easier development moving forward.
 
 4. Procedural Processes:
+
 All steps of connecting to the NTRIP server up to the transmission of RTCM correction data detail the current step of the process and any possible errors including the network connection, binding the UART device, and resolving the host. This allows for all devices in a fleet on boot up to easily show errors for fixing any possible formatting issues most likely related to specifiying the correct information for the NTRIP server, the WiFi network, or possible UART availability. The first two are primarily of interest to customers or technicians who need to implement a specific setup. Callbacks are implemented as well for dealing with network connections to capture errors with WiFi. This allows for the device to trigger a response and would further help with reporting issues in a fleet of wireless devices.
 
 5. Technology for Clients:
+
 The technology developed for this project looks to use an engineered device in a way that is designed for use by those without an engineering background. This is because many of the workers maintaining sports fields likely are not exposed to these topics. The opportunity presented would allow for a business model leveraging technicians familar with the system to service and possibly operate multiple autonomous systems in a metropolitan area.***
 
 
