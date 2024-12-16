@@ -42,18 +42,29 @@ This led to the idea of developing an RTK-GPS system for mobile robots by creati
 
 So, all areas were changed, including:
 1. Target Market & Demographics
+
+The target market for an RTK-GPS system for mobile robots can be people looking for very accurate positioning, but a unique opportunity was focused on within the sports industry. For sport fields, lines are painted precisely and take up to 60 man hours of time to prepare the field for a game. An automated solution presents a unique opportunity to lower the cost and time to prepare as the system can operate with minimal human intervention while maintaining centimer level accuracy. Specifically, professional sport fields would be the best first customer as it would increase the credibility of the solution while also providing the best case for testing the solution with professional athletes, maintenance crews, and other field personel. *more data from slides?*
+
 2. Security, Hardware, & Software Requirements
+
+The plan for security is to implement it on top of core functionalities of the product that the customers would expect to see. As the location based system is most relevant and breaking into the RTK-GPS system or interfering with robot operation is low risk if compromised, security was not seen as a prominent issue for the minimum viable product demo. It is extremely important to consider security in the context of another node on a network that is part of a sports stadium. This led to * security stuff*. Therefore, as the system is tested and scaled, more security features will be added to ensure that the RTK-GPS module or the nRF 5340 are not weak points in an overall network security setup. It is possible to connect the system to the stadium's WiFi network but it is also a viable solution when the business transitions to a service for technicians to bring a router and setup their own temporary network for operations.
+
 3. Product Function & Components
+
+The product function completely changed except for the nRF 5340 chip at the core as part of the nRF 7002 DK.
+
+The key idea can be seen in this system diagram: *
+
 4. Power & Cost Budgeting
 
-*more reflection*
+Power budgeting remained similar as it was decided to power the device off of a portable charger for the minimum viable product demo. However, the RTK-GPS solution requires a power for roughly * hours of field painting. This would be *
 
 ## 2. Reflecting on the Venture Pitch
 Going back to the original Venture Pitch, the main concerns with the smart dog feeder that were discussed were unique features for market penetration, reliability of the dispensing mechanism being a mechanical factor limiting progress, and an innovative user interface. Reflecting on this, the project was changed because a newer market that transfers technology would better benefit from IoT features integrated into a novel product.
 
 A second Venture Pitch was done that highlighted the wireless communication with WiFi and LoRa, development with an RTK-GPS module (ZED-F9P), andthe use of off the shelf robot solutions. This combines into a feasible demo with a lean team for engineering and scalability considerations to integrate with existing stadium infrastructure. The primary focus for the product and demo is to target professional sports fields to acquire credibility, funding, and marketability from working with an initial high profile client.
 
-## 3. Successes
+## 3. Key Successes
 
 1. NTRIP Server:
 
@@ -76,7 +87,7 @@ All steps of connecting to the NTRIP server up to the transmission of RTCM corre
 The technology developed for this project looks to use an engineered device in a way that is designed for use by those without an engineering background. This is because many of the workers maintaining sports fields likely are not exposed to these topics. The opportunity presented would allow for a business model leveraging technicians familar with the system to service and possibly operate multiple autonomous systems in a metropolitan area.***
 
 
-## 4. Failures
+## 4. Key Areas for Improvement
 
 1. Project Timeline:
 
