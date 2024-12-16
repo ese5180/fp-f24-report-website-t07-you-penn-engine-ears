@@ -91,13 +91,18 @@ The full Memfault integration was not achieved because of misunderstandings with
 The RTCM data for RTK lock is transmitted out of the nRF 7002 DK but it is not recognized by the ZED-F9P. This is likely due to a message formatting issue with how the RTCM data is packaged. Attempts were made to try and identify the message structure based off of a Sparkfun guide but were not fully formatted correctly for the demo.
 
 ## 5. Improving Workflow
-If you had to do it again, how might you change your development approach given the finite time and money resources?
+
+The workflow can be drastically improved by better dividing tasks for the workflow. It would make more sense to get the Memfault features fully working before the RTK-GPS parts arrived and to also format more of the NTRIP server connection before parts arrived.
+
+It would also make sense to devote more time to identifying specific message protocol structures further back in the ideation phase as it would provide a stronger outline for writing code further down the line in the development process. This could also allow for tests to be written to check message structure before the code parses the message to send to a device.
 
 ## 5. Improving Technology
-Would you change your system design after this development cycle? For example:
-Was your wireless communication protocol the correct choice?
-Would other sensors or actuators work better?
-Did your target market want something different?
+
+The system could be improved picking a better power source for the RTK-GPS module and the nRF 5340. Currently it can operate off of a portable charger, but it would make sense to look into a NiMH battery or a LiPo battery to use in the design. An NiMH battery would likely make more sense as it is less voltatile and can handle improper charging better than a LiPo battery which would be a primary concern considering the use of the device outdoors.
+
+The wireless communication protocol was correct but the option for a wired connection to the base station would make sense with a temporary or weak connection to WiFi that periodically sends updates to Memfault or downloads files for sport field lines on a more inconsistent schedule.
+
+The target market can be further explored to identify the ideal first customer to further collaborate with in developing the technology. It is likely that the ultimate strength of the system could be in its adaptability to different designs as the precise tracking implemented would be useful across different types of sport fields, vendor markers for an outdoor market, and guidelines for a temporary parkling lot. For this reason, the software can be further leveraged to explore how to convert drawings into coordinates to track with the GPS.
 
 ## More Stuff
 SEE doc for more stuff:
