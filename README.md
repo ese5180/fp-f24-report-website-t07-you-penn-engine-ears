@@ -88,7 +88,11 @@ The target market can be further explored to identify the ideal first customer t
 
 ### Minimum Viable Product Setup:
 
-Picture here*!
+ZED-F9P RTK-GPS module connected to the nRF 7002 DK over UART:
+![ZED](images/ZED-F9P,jpg)
+
+The antenna connected to the ZED-F9P that has view of the sky for satellite reception:
+![Antenna](images/Antenna.jpg)
 
 ### Core Functionality:
 
