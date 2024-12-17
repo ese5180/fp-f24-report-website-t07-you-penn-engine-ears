@@ -1,39 +1,5 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/KSk4F6vj)
 
-6.7 Final Report (Website)
-Description
-It’s time for a retrospective (sometimes called a post-mortem). Reflect on and respond to the following questions to better understand your successes and failures.
-
-Note: Your project need not be feature-complete to receive full credit. We like to see students taking calculated risks on projects, which can still result in failure - or what we call productive failure. Taking risks and failing is an excellent way to learn, so we’d like to reward that.
-
-Review your IoT Venture Pitch assignment. Identify what changed throughout the project, including:
-Target Market & Demographics
-Security, Hardware, & Software Requirements
-Product Function & Components
-Power & Cost Budgeting
-What parts of your project would you consider a success? Why?
-What parts of your project didn’t go well? Why?
-If you had to do it again, how might you change your development approach given the finite time and money resources?
-Would you change your system design after this development cycle? For example:
-Was your wireless communication protocol the correct choice?
-Would other sensors or actuators work better?
-Did your target market want something different?
-
-In addition to these questions, include evidence of your product working.
-Images of your MVP device
-Remember, we have a light box in the Detkin Lab for taking nicer photos with good lighting.
-You might not want a sterile environment for these photos - consider taking the photos where your device would be operating!
-A video demonstrating:
-Your Core Product Function
-Memfault integration features
-Anything else you think is relevant to the project
-Imagine you’d like to show your family or a potential employer what you did this semester. What would you want to include?
-
-Answer these questions in your README. Then, using GitHub Pages, make this repository a publicly viewable website. Feel free to create a more beautiful webpage, but the baseline is a webpage generated from the README.md file.
-Submission Details
-The GitHub repository README is updated with all pertinent information.
-
-
 
 ## 1. The Idea
 The original idea for the IoT Venture was to create a smart dog feeder. Significant research was put into this and can be referenceed here. However, it was decided to pivot to a more ambitious project and due to some interesting use cases of RTK-GPS for aerial robots, a decision was made to research applications for ground robots instead. Leveraging similar technology, there is a uniqe advantage to accurately knowing the location of a ground robot for using a tool, end effector, or actuator in the real world.
@@ -43,21 +9,24 @@ This led to the idea of developing an RTK-GPS system for mobile robots by creati
 So, all areas were changed, including:
 1. Target Market & Demographics
 
-The target market for an RTK-GPS system for mobile robots can be people looking for very accurate positioning, but a unique opportunity was focused on within the sports industry. For sport fields, lines are painted precisely and take up to 60 man hours of time to prepare the field for a game. An automated solution presents a unique opportunity to lower the cost and time to prepare as the system can operate with minimal human intervention while maintaining centimer level accuracy. Specifically, professional sport fields would be the best first customer as it would increase the credibility of the solution while also providing the best case for testing the solution with professional athletes, maintenance crews, and other field personel. *more data from slides?*
+The target market for an RTK-GPS system for mobile robots can be people looking for very accurate positioning, but a unique opportunity was focused on within the sports industry. For sport fields, lines are painted precisely and take up to 60 man hours of time to prepare the field for a game. An automated solution presents a unique opportunity to lower the cost and time to prepare as the system can operate with minimal human intervention while maintaining centimer level accuracy. Specifically, professional sport fields would be the best first customer as it would increase the credibility of the solution while also providing the best case for testing the solution with professional athletes, maintenance crews, and other field personel.
 
 2. Security, Hardware, & Software Requirements
 
-The plan for security is to implement it on top of core functionalities of the product that the customers would expect to see. As the location based system is most relevant and breaking into the RTK-GPS system or interfering with robot operation is low risk if compromised, security was not seen as a prominent issue for the minimum viable product demo. It is extremely important to consider security in the context of another node on a network that is part of a sports stadium. This led to * security stuff*. Therefore, as the system is tested and scaled, more security features will be added to ensure that the RTK-GPS module or the nRF 5340 are not weak points in an overall network security setup. It is possible to connect the system to the stadium's WiFi network but it is also a viable solution when the business transitions to a service for technicians to bring a router and setup their own temporary network for operations.
+The plan for security is to implement it on top of core functionalities of the product that the customers would expect to see. As the location based system is most relevant and breaking into the RTK-GPS system or interfering with robot operation is low risk if compromised, security was not seen as a prominent issue for the minimum viable product demo. It is extremely important to consider security in the context of another node on a network that is part of a sports stadium. This led to design paradigms around WPA3 and TLS encryption for WiFi
+and encrytping RTCM data and pre-share encryption keys leveraging the Diffie-Hellman exchange. Therefore, as the system is tested and scaled, more security features will be added to ensure that the RTK-GPS module or the nRF 5340 are not weak points in an overall network security setup. It is possible to connect the system to the stadium's WiFi network but it is also a viable solution when the business transitions to a service for technicians to bring a router and setup their own temporary network for operations.
 
 3. Product Function & Components
 
 The product function completely changed except for the nRF 5340 chip at the core as part of the nRF 7002 DK.
 
-The key idea can be seen in this system diagram: *
+The key idea can be seen in this system diagram:
+
+![System_Diagram](images/System_Diagram.png)
 
 4. Power & Cost Budgeting
 
-Power budgeting remained similar as it was decided to power the device off of a portable charger for the minimum viable product demo. However, the RTK-GPS solution requires a power for roughly * hours of field painting. This would be *
+Power budgeting remained similar as it was decided to power the device off of a portable charger for the minimum viable product demo. However, the RTK-GPS solution would benefit from 12 hours of battery life to allow it to operate autonomously overnight with margins for safety.*
 
 ## 2. Reflecting on the Venture Pitch
 Going back to the original Venture Pitch, the main concerns with the smart dog feeder that were discussed were unique features for market penetration, reliability of the dispensing mechanism being a mechanical factor limiting progress, and an innovative user interface. Reflecting on this, the project was changed because a newer market that transfers technology would better benefit from IoT features integrated into a novel product.
@@ -84,7 +53,7 @@ All steps of connecting to the NTRIP server up to the transmission of RTCM corre
 
 5. Technology for Clients:
 
-The technology developed for this project looks to use an engineered device in a way that is designed for use by those without an engineering background. This is because many of the workers maintaining sports fields likely are not exposed to these topics. The opportunity presented would allow for a business model leveraging technicians familar with the system to service and possibly operate multiple autonomous systems in a metropolitan area.***
+The technology developed for this project looks to use an engineered device in a way that is designed for use by those without an engineering background. This is because many of the workers maintaining sports fields likely are not exposed to these topics. The opportunity presented would allow for a business model leveraging technicians familar with the system to service and possibly operate multiple autonomous systems in a metropolitan area.
 
 
 ## 4. Key Areas for Improvement
@@ -115,8 +84,41 @@ The wireless communication protocol was correct but the option for a wired conne
 
 The target market can be further explored to identify the ideal first customer to further collaborate with in developing the technology. It is likely that the ultimate strength of the system could be in its adaptability to different designs as the precise tracking implemented would be useful across different types of sport fields, vendor markers for an outdoor market, and guidelines for a temporary parkling lot. For this reason, the software can be further leveraged to explore how to convert drawings into coordinates to track with the GPS.
 
-## More Stuff
-SEE doc for more stuff:
+## 6. Product Demo
+
+### Minimum Viable Product Setup:
+
+Picture here*!
+
+### Core Functionality:
+
+The system initializes and streams RTCM data, providing location and time of base station, satellite quality, and correction data containing carrier phase, pseudo-range, clock bias, and atmospheric corrections: https://drive.google.com/file/d/13XMZF255PdSiIMZWPl7YRpx98sbcSZYV/view?resourcekey
+
+
+ZED-F9P GPS tracking can be seen in U-Center: https://drive.google.com/file/d/1RPHa82W0FPMpl-o1j9M5-3Sc8esZUcyS/view?resourcekey
+
+
+### Memfault:
+From Memfault it can be seen there are 2 devices:
+
+![MF_devices](images/MF_devices.png)
+
+From the serial monitor device 1 connects:
+
+![d1-serial](images/d1-serial.png)
+
+From the serial monitor device 2 connects:
+
+![d2-serial](images/d2-serial.png)
+
+Core dumps are received and can be downloaded to be analyzed:
+
+![MF_coredump](images/MF_coredump.png)
+
+From Memfault it can be seen there is a trace event:
+
+![MF_trace-event](images/trace-event.png)
+
 
 In addition to these questions, include evidence of your product working.
 Images of your MVP device
