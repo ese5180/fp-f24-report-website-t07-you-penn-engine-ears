@@ -126,24 +126,24 @@ From Memfault it can be seen there is a trace event:
 
 ## 7. Work Divison
 
-Dog Feeder Original Venture Pitch - Andrew Katz and Jack Campanella
+1. Dog Feeder Original Venture Pitch - Andrew Katz and Jack Campanella
 
-RTK-GPS Mobile Robot re-Pitch - Jack Campanella
+2. RTK-GPS Mobile Robot re-Pitch - Jack Campanella
 
-Memfault Assignment - Andrew Katz
+3. Memfault Assignment - Andrew Katz
 
-NTRIP Connection Code - Jack Campanella
+4. NTRIP Connection Code - Jack Campanella
 
-RTCM Filtering Code - Jack Campanella
+5. RTCM Filtering Code - Jack Campanella
 
-Logging for RTCM, UART, and Network - Jack Campanella
+6. Logging for RTCM, UART, and Network - Jack Campanella
 
-UART Forwarding RTCM Code - Jack Campanella
+7. UART Forwarding RTCM Code - Jack Campanella
 
-UART Device Tree Configuration in VS Code - Andrew Katz
+8. UART Device Tree Configuration in VS Code - Andrew Katz
 
-Final Presentation Slides - Jack Campanella
+9. Final Presentation Slides - Jack Campanella
 
-System Diagram - Andrew Katz
+10. System Diagram - Andrew Katz
 
-Final Report Website - Jack Campanella
+11. Final Report Website - Jack Campanella
