@@ -82,7 +82,7 @@ The system could be improved picking a better power source for the RTK-GPS modul
 
 The wireless communication protocol was correct but the option for a wired connection to the base station would make sense with a temporary or weak connection to WiFi that periodically sends updates to Memfault or downloads files for sport field lines on a more inconsistent schedule.
 
-The target market can be further explored to identify the ideal first customer to further collaborate with in developing the technology. It is likely that the ultimate strength of the system could be in its adaptability to different designs as the precise tracking implemented would be useful across different types of sport fields, vendor markers for an outdoor market, and guidelines for a temporary parkling lot. For this reason, the software can be further leveraged to explore how to convert drawings into coordinates to track with the GPS.
+The target market can be further explored to identify the ideal first customer to further collaborate with in developing the technology. It is likely that the ultimate strength of the system could be in its adaptability to different designs as the precise tracking implemented would be useful across different types of sport fields, vendor markers for an outdoor market, and guidelines for a temporary parking lot. For this reason, the software can be further leveraged to explore how to convert drawings into coordinates to track with the GPS.
 
 ## 6. Product Demo
 
