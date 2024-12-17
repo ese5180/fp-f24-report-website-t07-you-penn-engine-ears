@@ -1,6 +1,10 @@
 
 # Link Link: an RTK-GPS Mobile Robot for painting sport fields
 
+by Jack Campanella and Andrew Katz
+
+https://ese5180.github.io/fp-f24-report-website-t07-you-penn-engine-ears/
+
 ## 1. The Idea
 The original idea for the IoT Venture was to create a smart dog feeder. Significant research was put into this and can be referenceed here. However, it was decided to pivot to a more ambitious project and due to some interesting use cases of RTK-GPS for aerial robots, a decision was made to research applications for ground robots instead. Leveraging similar technology, there is a uniqe advantage to accurately knowing the location of a ground robot for using a tool, end effector, or actuator in the real world.
 
