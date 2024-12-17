@@ -96,10 +96,10 @@ The antenna connected to the ZED-F9P that has view of the sky for satellite rece
 
 ### Core Functionality:
 
-The system initializes and streams RTCM data, providing location and time of base station, satellite quality, and correction data containing carrier phase, pseudo-range, clock bias, and atmospheric corrections: https://drive.google.com/file/d/13XMZF255PdSiIMZWPl7YRpx98sbcSZYV/view?resourcekey
+The system initializes and streams RTCM data, providing location and time of base station, satellite quality, and correction data containing carrier phase, pseudo-range, clock bias, and atmospheric corrections: [Demo Video 1](https://drive.google.com/file/d/13XMZF255PdSiIMZWPl7YRpx98sbcSZYV/view?resourcekey)
 
 
-ZED-F9P GPS tracking can be seen in U-Center: https://drive.google.com/file/d/1RPHa82W0FPMpl-o1j9M5-3Sc8esZUcyS/view?resourcekey
+ZED-F9P GPS tracking can be seen in U-Center: [Demo Video 2](https://drive.google.com/file/d/1RPHa82W0FPMpl-o1j9M5-3Sc8esZUcyS/view?resourcekey)
 
 
 ### Memfault:
