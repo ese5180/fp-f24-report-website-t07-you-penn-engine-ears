@@ -26,7 +26,7 @@ The key idea can be seen in this system diagram:
 
 ### Power & Cost Budgeting
 
-Power budgeting remained similar as it was decided to power the device off of a portable charger for the minimum viable product demo. However, the RTK-GPS solution would benefit from 12 hours of battery life to allow it to operate autonomously overnight with margins for safety.*
+Power budgeting remained similar as it was decided to power the device off of a portable charger for the minimum viable product demo. However, the RTK-GPS solution would benefit from 12 hours of battery life to allow it to operate autonomously overnight with margins for safety. This would require a battery with around 4000mAh as the system draws roughly 3300mA per hour of operation. It is possible that it would make sense for the base station to be powered over a wire as well instead of with a battery.
 
 ## 2. Reflecting on the Venture Pitch
 Going back to the original Venture Pitch, the main concerns with the smart dog feeder that were discussed were unique features for market penetration, reliability of the dispensing mechanism being a mechanical factor limiting progress, and an innovative user interface. Reflecting on this, the project was changed because a newer market that transfers technology would better benefit from IoT features integrated into a novel product.
