@@ -33,7 +33,7 @@ Going back to the original Venture Pitch, the main concerns with the smart dog f
 
 A second Venture Pitch was done that highlighted the wireless communication with WiFi and LoRa, development with an RTK-GPS module (ZED-F9P), andthe use of off the shelf robot solutions. This combines into a feasible demo with a lean team for engineering and scalability considerations to integrate with existing stadium infrastructure. The primary focus for the product and demo is to target professional sports fields to acquire credibility, funding, and marketability from working with an initial high profile client.
 
-## 3. Key Successes
+## 3. Key Areas of Success
 
 1. NTRIP Server:
 
