@@ -7,16 +7,16 @@ The original idea for the IoT Venture was to create a smart dog feeder. Signific
 This led to the idea of developing an RTK-GPS system for mobile robots by creating a rover and base station module using a combined RTK-GPS module, a LoRa module, and leveraging the nRF 5340 where the base station corrects the relative position of the rover using RTCM correction data. This would allow the mobile robot to have a painting tool and follow a specified path with GPS coordinates that form trajectories for the robot to navigate and paint sport field lines.
 
 So, all areas were changed, including:
-1. Target Market & Demographics
+### Target Market & Demographics
 
 The target market for an RTK-GPS system for mobile robots can be people looking for very accurate positioning, but a unique opportunity was focused on within the sports industry. For sport fields, lines are painted precisely and take up to 60 man hours of time to prepare the field for a game. An automated solution presents a unique opportunity to lower the cost and time to prepare as the system can operate with minimal human intervention while maintaining centimer level accuracy. Specifically, professional sport fields would be the best first customer as it would increase the credibility of the solution while also providing the best case for testing the solution with professional athletes, maintenance crews, and other field personel.
 
-2. Security, Hardware, & Software Requirements
+### Security, Hardware, & Software Requirements
 
 The plan for security is to implement it on top of core functionalities of the product that the customers would expect to see. As the location based system is most relevant and breaking into the RTK-GPS system or interfering with robot operation is low risk if compromised, security was not seen as a prominent issue for the minimum viable product demo. It is extremely important to consider security in the context of another node on a network that is part of a sports stadium. This led to design paradigms around WPA3 and TLS encryption for WiFi
 and encrytping RTCM data and pre-share encryption keys leveraging the Diffie-Hellman exchange. Therefore, as the system is tested and scaled, more security features will be added to ensure that the RTK-GPS module or the nRF 5340 are not weak points in an overall network security setup. It is possible to connect the system to the stadium's WiFi network but it is also a viable solution when the business transitions to a service for technicians to bring a router and setup their own temporary network for operations.
 
-3. Product Function & Components
+### Product Function & Components
 
 The product function completely changed except for the nRF 5340 chip at the core as part of the nRF 7002 DK.
 
@@ -24,7 +24,7 @@ The key idea can be seen in this system diagram:
 
 ![System_Diagram](images/System_Diagram.png)
 
-4. Power & Cost Budgeting
+### Power & Cost Budgeting
 
 Power budgeting remained similar as it was decided to power the device off of a portable charger for the minimum viable product demo. However, the RTK-GPS solution would benefit from 12 hours of battery life to allow it to operate autonomously overnight with margins for safety.*
 
