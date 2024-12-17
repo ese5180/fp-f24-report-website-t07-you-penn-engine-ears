@@ -127,13 +127,23 @@ From Memfault it can be seen there is a trace event:
 ## 7. Work Divison
 
 Dog Feeder Original Venture Pitch - Andrew Katz and Jack Campanella
+
 RTK-GPS Mobile Robot re-Pitch - Jack Campanella
+
 Memfault Assignment - Andrew Katz
+
 NTRIP Connection Code - Jack Campanella
+
 RTCM Filtering Code - Jack Campanella
+
 Logging for RTCM, UART, and Network - Jack Campanella
+
 UART Forwarding RTCM Code - Jack Campanella
+
 UART Device Tree Configuration in VS Code - Andrew Katz
+
 Final Presentation Slides - Jack Campanella
+
 System Diagram - Andrew Katz
+
 Final Report Website - Jack Campanella
